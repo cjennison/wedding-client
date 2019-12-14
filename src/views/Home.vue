@@ -1,13 +1,16 @@
 <template>
   <div class="home">
-    HOME
+    <h3 class="fancy">
+      We are getting married!
+    </h3>
+    <p>
+
+    </p>
   </div>
 
 </template>
 
 <script>
-// @ is an alias to /src
-
 export default {
   name: 'home'
 }
@@ -16,11 +19,16 @@ export default {
 <style lang="scss">
   .home {
     text-align: center;
-    padding: 30px;
+    padding: 10px;
 
     .banner {
       max-width: 400px;
       display: inline-block;
+    }
+
+    .fancy {
+      font-family: 'Great Vibes', cursive;
+      font-size: 18px;
     }
   }
 </style>
