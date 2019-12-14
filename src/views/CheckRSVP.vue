@@ -10,7 +10,7 @@
             {{ email }}
           </p>
           <b-alert v-if="displayError && !loading" show variant="danger">Something went wrong. Contact Chris.</b-alert>
-          <div v-if="rsvp" style="padding-top: 10px;">
+          <div v-if="rsvp && rsvp.rsvp" style="padding-top: 10px;">
             <p>You are RSVPd!</p>
             <h4>Attendees:</h4>
             <div v-for="attendee in rsvp.attendees" v-bind:key="attendee.id">
@@ -20,7 +20,7 @@
               <p v-if="attendee.gluten_free">Gluten Free</p>
             </div>
           </div>
-          <div v-if="!rsvp && !loading" style="padding-top: 10px;">
+          <div v-if="rsvp && !rsvp.rsvp && !loading" style="padding-top: 10px;">
             Could not find RSVP for this email
           </div>
         </b-card-text>

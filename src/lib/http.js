@@ -1,6 +1,6 @@
 import Axios from "axios"
 
-const API_URL = 'http://localhost:3000'
+const API_URL = process.env.NODE_ENV === 'development' ? 'http://localhost:3000' : 'https://chris-jess-wedding-api.herokuapp.com'
 
 export default {
   get(endpoint, config) {
