@@ -5,6 +5,10 @@ import Story from './views/Story.vue'
 import Gifts from './views/Gifts.vue'
 import Details from './views/Details.vue'
 import RSVP from './views/RSVP.vue'
+import CheckRSVP from './views/CheckRSVP.vue'
+
+import Admin from './views/Admin.vue'
+import RouterView from './views/RouterView.vue'
 
 Vue.use(Router)
 
@@ -12,6 +16,11 @@ export default new Router({
   routes: [
     {
       path: '/',
+      name: 'home',
+      component: Home
+    },
+    {
+      path: '/home',
       name: 'home',
       component: Home
     },
@@ -33,7 +42,24 @@ export default new Router({
     {
       path: '/rsvp',
       name: 'rsvp',
-      component: RSVP
+      component: RouterView,
+      children: [
+        {
+          name: 'index',
+          path: '',
+          component: RSVP,
+        },
+        {
+          name: 'index',
+          path: ':email',
+          component: CheckRSVP,
+        }
+      ]
+    },
+    {
+      path: '/admin',
+      name: 'admin',
+      component: Admin
     },
   ]
 })

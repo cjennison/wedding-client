@@ -1,11 +1,6 @@
 <template>
-  <div class="home">
-    <h3 class="fancy">
-      We are getting married!
-    </h3>
-    <p>
-
-    </p>
+  <div class="home row">
+   
   </div>
 
 </template>
@@ -19,7 +14,19 @@ export default {
 <style lang="scss">
   .home {
     text-align: center;
-    padding: 10px;
+    height: 0;
+
+    .block {
+      font-size: 25px;
+      border: 1px solid white;
+      margin: 0 40px;
+      padding: 15px;
+    }
+
+    .details {
+      padding: 5px;
+      font-size: 16px;
+    }
 
     .banner {
       max-width: 400px;
@@ -28,7 +35,12 @@ export default {
 
     .fancy {
       font-family: 'Great Vibes', cursive;
-      font-size: 18px;
+      font-size: 30px;
+    }
+
+    .content-card {
+      background: #465670;
+      padding: 10px;
     }
   }
 </style>
