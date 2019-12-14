@@ -15,7 +15,6 @@ export default {
 
 <style lang="scss">
   .home {
-    text-align: center;
     padding: 30px;
 
     .banner {

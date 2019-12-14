@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import Home from './views/Home.vue'
 import Story from './views/Story.vue'
 import RSVP from './views/RSVP.vue'
+import Admin from './views/Admin.vue'
 
 Vue.use(Router)
 
@@ -22,6 +23,11 @@ export default new Router({
       path: '/rsvp',
       name: 'rsvp',
       component: RSVP
+    },
+    {
+      path: '/admin',
+      name: 'admin',
+      component: Admin
     },
   ]
 })
