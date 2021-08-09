@@ -14,7 +14,7 @@
               When:
             </h4>
             <div class="details">
-              <h4>Friday September 4th, 2020. </h4>
+              <h4>Friday September 3rd, 2020. </h4>
               Ceremony <b>5pm</b> <br />
               Reception <b>6pm</b> <br />
 
@@ -100,7 +100,7 @@
               <p>
                 <a class="hotel-link" href="https://www.airbnb.com/a/Northampton--Massachusetts--United-States?af=43720035&c=.pi0.pk56706516419_387980181985_c_460917530633&sem_position=1t1&sem_target=aud-428713872427:kwd-460917530633&location_of_interest=&location_physical=9002007&localized_ghost=true&gclid=Cj0KCQiArdLvBRCrARIsAGhB_syO-Jy5tWZEf7keZ0_llwLDk_-FqOTgYCQTcof9xvlSqJxFKVKhpnoaAoa1EALw_wcB">Airbnb</a>
               </p>
-              <small>*We will reach out to you individually for blocked rooms.</small>
+
             </div>
           </div>
         </b-card-text>
@@ -125,7 +125,7 @@
       </b-card>
       <hr />
     </div>
-    
+
   </div>
 
 </template>
